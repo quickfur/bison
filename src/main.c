@@ -60,9 +60,10 @@ main (int argc, char *argv[])
 {
   set_program_name (argv[0]);
   setlocale (LC_ALL, "");
-  (void) bindtextdomain (PACKAGE, LOCALEDIR);
-  (void) bindtextdomain ("bison-runtime", LOCALEDIR);
-  (void) textdomain (PACKAGE);
+  bindtextdomain (PACKAGE, LOCALEDIR);
+  bindtextdomain ("bison-gnulib", LOCALEDIR);
+  bindtextdomain ("bison-runtime", LOCALEDIR);
+  textdomain (PACKAGE);
 
   {
     char const *cp = getenv ("LC_CTYPE");
