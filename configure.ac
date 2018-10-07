@@ -224,7 +224,7 @@ AM_WITH_DMALLOC
 # We use gnulib, which is only guaranteed to work properly with the
 # latest Gettext.
 AM_GNU_GETTEXT([external], [need-ngettext])
-AM_GNU_GETTEXT_VERSION([0.19.8])
+AM_GNU_GETTEXT_VERSION([0.18.3])
 BISON_I18N
 AC_CONFIG_FILES([gnulib-po/Makefile.in])
 
